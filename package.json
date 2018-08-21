@@ -1,0 +1,17 @@
+{
+  "name": "injector",
+  "version": "0.0.1",
+  "description": "Reproduce own Injector as Angular 1",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm test",
+    "test": "mocha",
+    "test:break": "mocha --inspect-brk"
+  },
+  "author": "Alberto Fernandez Reyes",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "mocha": "^5.2.0"
+  }
+}
