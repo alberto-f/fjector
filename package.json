@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "precommit": "npm test",
-    "test": "mocha",
-    "test:break": "mocha --inspect-brk"
+    "test": "npm run lint && mocha",
+    "test:break": "mocha --inspect-brk",
+    "lint": "standard",
+    "lint:verbose": "standard --verbose",
+    "lint:fix": "standard --fix"
   },
   "author": "Alberto Fernandez Reyes",
   "license": "ISC",
   "devDependencies": {
     "husky": "^0.14.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "standard": "^11.0.1"
   }
 }
