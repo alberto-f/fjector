@@ -22,7 +22,7 @@ ServiceA.say = function(){
 }
 
 const injector = DependencyInjector.getInstance()
-injector.add('ServiceA', ServiceA )
+injector.register('ServiceA', ServiceA )
 
 ```
 
